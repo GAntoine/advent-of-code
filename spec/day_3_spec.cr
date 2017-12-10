@@ -1,5 +1,5 @@
 require "./spec_helper"
-require "../src/third_day"
+require "../src/day_3"
 
 describe AdventOfCode::ThirdDay do
   square = 368078

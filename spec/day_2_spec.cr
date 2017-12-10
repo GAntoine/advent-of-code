@@ -1,5 +1,5 @@
 require "./spec_helper"
-require "../src/second_day"
+require "../src/day_2"
 
 describe AdventOfCode::SecondDay do
   spreadsheet = [

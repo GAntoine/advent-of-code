@@ -1,5 +1,5 @@
 require "./spec_helper"
-require "../src/fourth_day"
+require "../src/day_4"
 
 describe AdventOfCode::FourthDay do
   file_path = File.join(
