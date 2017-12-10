@@ -6,7 +6,7 @@ describe AdventOfCode::FourthDay do
     [
       File.dirname(__FILE__),
       "data",
-      "passphrases.txt",
+      "day_4_input.txt",
     ]
   )
 
