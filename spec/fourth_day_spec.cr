@@ -22,7 +22,7 @@ describe AdventOfCode::FourthDay do
     it "" do
       sum = AdventOfCode::FourthDay.part_two(file_path)
 
-      sum.should eq(0)
+      sum.should eq(208)
     end
   end
 end

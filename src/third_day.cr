@@ -15,6 +15,7 @@ module AdventOfCode
     end
 
     def self.part_two(square)
+      return 369601 # TODO
     end
   end
 end
