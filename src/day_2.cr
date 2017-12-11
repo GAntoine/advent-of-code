@@ -9,17 +9,17 @@ module AdventOfCode
       spreadsheet = build_spreadsheet(file_path)
       spreadsheet.reduce(0) do |acc, arr|
         sorted = arr.sort
-        divident, divisor = 0, 1
+        divident, divisor = [] of Int32, 1
 
         sorted.each_with_index do |elem, i|
           divisor = elem
           divident = sorted
             .last(sorted.size - (i + 1))
-            .find { |sortee| sortee % elem == 0 }
-          break if divident
+            .select { |sortee| sortee % elem == 0 }
+          break if divident.any?
         end
 
-        acc + (divident || 0) / divisor
+        acc + divident.first / divisor
       end
     end
 

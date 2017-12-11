@@ -5,7 +5,7 @@ describe AdventOfCode::ThirdDay do
   square = 368078
 
   describe "#part_one" do
-    it "sums of all digits that match the next digit in the list" do
+    it "returns the number of steps required" do
       steps = AdventOfCode::ThirdDay.part_one(square)
 
       steps.should eq(371)
@@ -13,10 +13,10 @@ describe AdventOfCode::ThirdDay do
   end
 
   describe "#part_two" do
-    it "sums of all digits that match the digit halfway around" do
-      steps = AdventOfCode::ThirdDay.part_two(square)
+    it "returns the first value written that is larger than the puzzle input" do
+      first_value = AdventOfCode::ThirdDay.part_two(square)
 
-      steps.should eq(369601)
+      first_value.should eq(369601)
     end
   end
 end

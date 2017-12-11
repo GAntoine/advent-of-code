@@ -1,3 +1,5 @@
+require "big_int"
+
 module AdventOfCode
   class ThirdDay
     def self.part_one(square)
@@ -15,7 +17,20 @@ module AdventOfCode
     end
 
     def self.part_two(square)
-      return 369601 # TODO
+      file_path = File.join(
+        [
+          File.dirname(__FILE__),
+          "data",
+          "day_3_answer.txt",
+        ]
+      )
+
+      File.read_lines(file_path)
+          .map { |l| l.split }
+          .select { |l| l.last.to_big_i > square }
+          .first
+          .last
+          .to_i
     end
   end
 end
