@@ -6,7 +6,7 @@ authors:
 
 targets:
   advent_of_code:
-    main: src/advent_of_code.cr
+    main: src/2017/advent_of_code.cr
 
 crystal: 0.23.1
 
