@@ -24,11 +24,11 @@ def get_next_point(line, last)
 	if direction == "R"
 		return Point.new(last.x + l, last.y)
 	elsif direction == "L"
-		return  Point.new(last.x - l, last.y)
+		return Point.new(last.x - l, last.y)
 	elsif direction == "U"
-		return  Point.new(last.x, last.y + l)
+		return Point.new(last.x, last.y + l)
 	elsif direction == "D"
-		return  Point.new(last.x, last.y - l)
+		return Point.new(last.x, last.y - l)
 	end
 end
 
