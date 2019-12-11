@@ -10,7 +10,7 @@
 
 require 'matrix'
 
-File.read("./data/day_7.txt").scan(/.{1,150}/).map { |layer|
+File.read("./data/day_8.txt").scan(/.{1,150}/).map { |layer|
 	Matrix[*layer.scan(/.{1,25}/).map { |s| s.split("") }]
 }.reduce(Matrix.build(6, 25) { "2" }) { |sum, matrix|
 	matrix.each_with_index do |e, row, col|
